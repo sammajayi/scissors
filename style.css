@@ -1,0 +1,756 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  /* background: linear-gradient(to bottom, white, hsl(60, 47%, 93%)); */
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  margin-right: 200px;
+  margin-left: 250px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.header-logo {
+  margin-left: -48px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.125rem;
+  margin: 8px 0 0 160px;
+}
+
+li {
+  margin-left: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+a:active {
+  color: #0065fe;
+}
+
+a:hover {
+  color: #0065fe;
+}
+
+/* styles for the header CTA buttons */
+.CTA {
+  display: flex;
+  width: 20%;
+  margin-right: 480px;
+}
+
+.login {
+  color: #0065fe;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.login:hover {
+  color: black;
+}
+
+.free {
+  width: 8.9rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+  border: #0065fe;
+  background-color: #0065fe;
+  color: whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.free:hover {
+  background-color: #1e3448;
+}
+
+.free2 {
+  width: 8.9rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+  border: #0065fe;
+  background-color: #0065fe;
+  color: whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.free2:hover {
+  color: #1e3448;
+}
+
+/* styles for the hero section */
+
+.hero-section {
+  /* background: linear-gradient(80deg, rgba(255, 255, 255, 0.5), rgb(243, 242, 229,0.5)); */
+  max-width: 59rem;
+  margin: 1% auto;
+  justify-content: center;
+  place-items: center;
+}
+
+h1 {
+  
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 6rem;
+  text-align: center;
+  margin-bottom:-15px;
+}
+
+.hero-section p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: "Gilroy-Medium", sans-serif;
+  text-align: center;
+  width: 48.8rem;
+}
+
+.hero-section img{
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  color: #0065fe;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  margin-right: 16px;
+  cursor: pointer;
+  padding-left: 16px;
+}
+
+.learn-more:hover {
+  color: black;
+}
+
+.hero-button {
+  margin-top: 40px;
+}
+
+.hero-image {
+  margin-top: 50px;
+}
+
+.hero-image1 {
+  margin-left: 300px;
+}
+
+/* styles for second section */
+
+.second-section {
+  display: flex;
+  background-color: #f9fbfd;
+  gap: 100px;
+  justify-content: center;
+  padding: 2.5rem;
+  margin-top: -50px;
+}
+
+.second-section-text h1 {
+  /* width:21rem; */
+  text-align: left;
+  font-family: "Gilroy-Bold" sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.second-section-text {
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.blue {
+  color: #0065fe;
+}
+
+.usage {
+  display: flex;
+  width: 44rem;
+  justify-content: center;
+  gap: 72px;
+}
+
+.usage-number {
+  width: 7rem;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Gilroy-SemiBold", sans-serif;
+}
+
+.usage-number p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* styles for the features tab */
+.choose-us {
+  background-color: white;
+  display: flex;
+  gap: 250px;
+  padding: 5rem;
+  margin-left: 250px;
+}
+
+.why-choose-us {
+  width: 24.8rem;
+}
+
+.why-choose-us-header {
+  display: flex;
+  gap: 10px;
+  margin-left: -15px;
+}
+
+.why-choose-us-header h2 {
+  width: 24.8rem;
+  font-size: 2rem;
+  font-family: "Gilroy-Bold", sans-serif;
+  line-height: 2rem;
+}
+
+.why-choose-us p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1rem;
+  list-style: 1.75rem;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.features {
+  width: 21rem;
+  gap: 30px;
+}
+
+h5 {
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-size: 2rem;
+  line-height: 1.75rem;
+  margin-top: 20px;
+}
+
+.features p {
+  font-size: 1rem;
+  font-family: "Gilroy-Medium", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 15px;
+}
+
+.price-plan-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.price-header {
+  width: 36rem;
+  margin: 20px auto;
+  margin-top: 70px;
+}
+
+.price-header-text {
+  display: flex;
+  gap: 10px;
+  margin-left: -15px;
+}
+
+.price-header-text h2 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.price-header p {
+  font-size: 1rem;
+  font-family: "Gilroy-Medium", sans-serif;
+  list-style: 1.5rem;
+  text-align: center;
+}
+
+.price-plan {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.basic-plan {
+  border-left: 0.4px solid #005ae2;
+  border-top: 0.4px solid #005ae2;
+  border-bottom: 0.4px solid #005ae2;
+  box-shadow: 0px 4px 8px 0px #0000000D;
+
+  border-radius: 12px 0 0 12px;
+  width: 23.6rem;
+  height: 28rem;
+  margin-top: 80px;
+}
+
+.basic-plan h2 {
+  margin-top: 30px;
+  margin-left: 80px;
+  font-family: 'Gilroy-Medium', sans-serif;
+font-size: 1.5rem;
+line-height: 32px;
+font-weight: 500;
+}
+
+.basic-plan-heading {
+  margin-left: 80px;
+  margin-top: 15px;
+}
+
+.basic-plan-heading h3{
+font-family: 'Gilroy-Bold', sans-serif;
+font-size: 2.5rem;
+line-height: 48px;
+
+}
+
+.basic-plan-heading p{
+  font-family: 'Gilroy-Medium', sans-serif;
+font-size: 1.25rem;
+line-height: 32px;
+margin-top:10px;
+}
+
+.basic-plan-body {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+.basic-plan-body p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 0.8rem;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+
+.blue-checked{
+  float: left;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.professional-plan {
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  box-shadow: 0px 4px 8px 0px #0000000d;
+  color: whitesmoke;
+  width: 25.6rem;
+  height: 39rem;
+  border-radius: 12px;
+}
+
+.professional-plan h2 {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin-top: 96px;
+  margin-left: 50px;
+  font-weight: 500;
+}
+
+.professional-plan-heading {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.professional-plan-heading h3 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+
+.professional-plan-heading p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+
+.professional-plan-body {
+  margin-top: 24px;
+}
+
+.professional-plan-body p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 0.8rem;
+  line-height: 24px;
+  margin-top: 25px;
+}
+
+.white-checked {
+  margin-right: 10px;
+  float: left;
+  padding: 3px;
+}
+
+.teams-plan {
+  border-right: 0.4px solid #005ae2;
+  border-top: 0.4px solid #005ae2;
+  border-bottom: 0.4px solid #005ae2;
+  width: 23.6rem;
+  height: 28rem;
+  margin-top: 80px;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0px 4px 8px 0px #0000000D;
+
+}
+
+.teams-plan h2{
+  margin-top:26px;
+  margin-left:80px ;
+  font-weight: 500;
+}
+
+.teams-plan-heading{
+  margin-left:80px;
+  margin-top:25px;
+}
+
+.teams-plan-heading h3{
+
+font-family: 'Gilroy-Bold', sans-serif;
+font-size: 2.5rem;
+line-height: 48px;
+}
+
+.teams-plan-heading p{
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+
+.teams-plan-body{
+  margin-left: 80px;
+  margin-top:20px;
+}
+
+.teams-plan-body p{
+  margin-top:20px;
+  font-family: 'Gilroy-Medium', sans-serif;
+font-size: 0.875rem;
+line-height: 24px;
+}
+
+.cta2 {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.custom-pricing-button {
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 100px;
+  border: 1px solid #0065fe;
+  background-color: white;
+  color: #0065fe;
+  font-weight: 550;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.custom-pricing-button:hover {
+  color: black;
+}
+
+.select-pricing-button {
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 100px;
+  border: 1px solid #0065fe;
+  background-color: #0065fe;
+  color: white;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.select-pricing-button:hover {
+  color: white;
+  background-color: #112232;
+}
+
+.form-section {
+  background-color: #1e3448;
+  justify-content: center;
+  padding: 5rem;
+}
+
+form {
+  background-color: white;
+  width: 29rem;
+  height: 22rem;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 2.3rem;
+}
+
+input,
+select {
+  border: 1px solid #3284ff;
+}
+
+#url {
+  border-radius: 12px;
+  width: 392px;
+  height: 55px;
+  color: #3284ff;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+
+input::placeholder {
+  color: #3284ff;
+}
+
+#url:active {
+  border: 2px solid #3284ff;
+}
+
+#domain-selection {
+  width: 15rem;
+  border-radius: 12px;
+  height: 3rem;
+  padding-left: 10px;
+  color: #005ae2;
+}
+
+#url-text {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 12px;
+  padding-left: 20px;
+}
+
+.form-input {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+#trim-url {
+  background-color: #005ae2;
+  border: 2px solid #005ae2;
+  border-radius: 100px;
+  width: 24.5rem;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 0.7;
+  height: 3rem;
+  padding-bottom: 10px;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+form p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "Gilroy-Medium", sans-serif;
+  color: #005ae2;
+}
+
+.accordion-section {
+  padding: 3rem;
+  justify-content: center;
+}
+
+.accordion-container {
+  width: 49rem;
+  margin: 20px auto;
+}
+
+.accordion-header {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.accordion-header h3 {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: -15px;
+}
+
+.accordion:after {
+  content: url(./asset/images/open.svg);
+  float: right;
+  margin-left: 10px;
+}
+
+.active:after {
+  content: url(./asset/images/Close.svg); /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+  /* padding: 0 18px; */
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  text-align: left;
+  place-items: left;
+}
+
+.panel p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.last-section {
+  background: #1e3448;
+  /* url(./asset/images/background-vector.svg),
+  url(./asset/images/background-vector1.svg); */
+  background-size: cover, contain, contain, contain;
+  padding: 2rem;
+  background-repeat: no-repeat;
+}
+
+.last-section-div {
+  width: 50rem;
+  margin: 20px auto;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.last-section-div h3 {
+  color: white;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* styles for footer */
+footer {
+  display: flex;
+  padding: 5rem;
+  place-content: center;
+  /* gap: 100px; */
+}
+
+.footer-text-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo-icon {
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.social-icon {
+  margin-top: 20px;
+}
+
+.social-icon-div {
+  display: flex;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  width: 11.25rem;
+}
+
+.footer-text h6 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-text-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  width: 12.5rem;
+}
+
+.footer-text-1 h6 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #112232;
+}
+
+
+/* styles for smaller screen */
+@media only screen and (max-width:768px){
+
+}
