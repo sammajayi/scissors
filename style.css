@@ -15,29 +15,31 @@ body {
 }
 
 main {
-  flex: 1;
+  /* flex: 1; */
 }
 
 header {
   /* background: linear-gradient(to bottom, white, hsl(60, 47%, 93%)); */
   display: flex;
-  width: 100%;
+  width: 80%;
   padding: 2rem;
-  margin-right: 200px;
-  margin-left: 250px;
+ justify-content: space-between;
+  margin: auto;
+
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  width:80%;
+  width:100%;
 }
 
-.header-logo {
-  margin-left: -48px;
+.header-logo{
+  width: 20%;
+ 
 }
+
+
 
 ul {
   display: flex;
@@ -45,10 +47,11 @@ ul {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 1.125rem;
   margin: 8px 0 0 160px;
+  gap: 30px;
 }
 
 li {
-  margin-left: 32px;
+  margin:auto;
 }
 
 a {
@@ -68,8 +71,8 @@ a:hover {
 /* styles for the header CTA buttons */
 .CTA {
   display: flex;
-  width: 20%;
-  margin-right: 480px;
+  width: 30%;;
+  gap: 30px;
 }
 
 .login {
@@ -77,7 +80,6 @@ a:hover {
   font-size: 1rem;
   background: none;
   border: none;
-  margin-right: 1rem;
   cursor: pointer;
 }
 
@@ -178,18 +180,20 @@ h1 {
 .second-section {
   display: flex;
   background-color: #f9fbfd;
-  gap: 100px;
-  justify-content: center;
-  padding: 2.5rem;
+  gap: 180px;
+ justify-content: center;
+  padding: 3rem;
   margin-top: -50px;
 }
 
 .second-section-text h1 {
-  /* width:21rem; */
+  width:21rem;
+  margin-left: 120px;
   text-align: left;
   font-family: "Gilroy-Bold" sans-serif;
   font-size: 2.5rem;
   line-height: 3rem;
+  justify-content: left;
 }
 
 .second-section-text {
@@ -204,7 +208,7 @@ h1 {
 .usage {
   display: flex;
   width: 44rem;
-  justify-content: center;
+  float: right;
   gap: 72px;
 }
 
@@ -227,9 +231,9 @@ h4 {
 .choose-us {
   background-color: white;
   display: flex;
-  gap: 250px;
+  gap: 100px;
   padding: 5rem;
-  margin-left: 250px;
+ margin-left: 180px;
 }
 
 .why-choose-us {
@@ -482,6 +486,7 @@ line-height: 24px;
 }
 
 .cta2 {
+  width: 30%;
   margin-top: 60px;
   margin-bottom: 80px;
 }
