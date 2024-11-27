@@ -15,43 +15,37 @@ body {
 }
 
 main {
-  /* flex: 1; */
+  width: 100%;
 }
 
 header {
   /* background: linear-gradient(to bottom, white, hsl(60, 47%, 93%)); */
   display: flex;
-  width: 80%;
+  width: 100%;
   padding: 2rem;
- justify-content: space-between;
-  margin: auto;
-
 }
 
 nav {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
-  width:100%;
+  width: 80%;
 }
 
-.header-logo{
+.header-logo {
   width: 20%;
- 
 }
-
-
 
 ul {
   display: flex;
   list-style: none;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 1.125rem;
-  margin: 8px 0 0 160px;
   gap: 30px;
 }
 
 li {
-  margin:auto;
+  margin: auto;
 }
 
 a {
@@ -71,7 +65,7 @@ a:hover {
 /* styles for the header CTA buttons */
 .CTA {
   display: flex;
-  width: 30%;;
+  width: 30%;
   gap: 30px;
 }
 
@@ -128,13 +122,12 @@ a:hover {
 }
 
 h1 {
-  
   font-family: "Gilroy-Bold", sans-serif;
   font-weight: 800;
   font-size: 3rem;
   line-height: 6rem;
   text-align: center;
-  margin-bottom:-15px;
+  margin-bottom: -15px;
 }
 
 .hero-section p {
@@ -145,8 +138,10 @@ h1 {
   width: 48.8rem;
 }
 
-.hero-section img{
+.hero-section img {
   margin-bottom: 20px;
+  transform: translateX(10px);
+  transition: ease-in 0.8s;
 }
 
 .learn-more {
@@ -180,15 +175,21 @@ h1 {
 .second-section {
   display: flex;
   background-color: #f9fbfd;
-  gap: 180px;
- justify-content: center;
   padding: 3rem;
   margin-top: -50px;
+  width: 100%;
+}
+
+.second-section-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 50px;
 }
 
 .second-section-text h1 {
-  width:21rem;
-  margin-left: 120px;
+  width: 21rem;
   text-align: left;
   font-family: "Gilroy-Bold" sans-serif;
   font-size: 2.5rem;
@@ -198,7 +199,6 @@ h1 {
 
 .second-section-text {
   gap: 10px;
-  margin-left: 10px;
 }
 
 .blue {
@@ -229,36 +229,51 @@ h4 {
 
 /* styles for the features tab */
 .choose-us {
-  background-color: white;
   display: flex;
-  gap: 100px;
+  width: 100%;
+  background-color: white;
   padding: 5rem;
- margin-left: 180px;
+  
 }
 
 .why-choose-us {
-  width: 24.8rem;
+  display: flex;
+ flex-direction: row;
+  width: 70%;
+  gap:50px;
+  margin: 30px auto;
+  
 }
 
 .why-choose-us-header {
   display: flex;
-  gap: 10px;
-  margin-left: -15px;
+  flex-direction: column;
+  width: 24.8rem;
+
 }
 
 .why-choose-us-header h2 {
-  width: 24.8rem;
+  width: 23rem;
   font-size: 2rem;
   font-family: "Gilroy-Bold", sans-serif;
   line-height: 2rem;
+  
+}
+
+
+.choose-us-div{
+  display: flex;
+  margin-left: -15px;
+  gap: 10px;
 }
 
 .why-choose-us p {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 1rem;
+  line-height: 1.5rem;
   list-style: 1.75rem;
-  margin-top: 15px;
-  text-align: justify;
+  text-align: left;
+  width: 23rem;
 }
 
 .features-grid {
@@ -282,22 +297,28 @@ h5 {
 .features p {
   font-size: 1rem;
   font-family: "Gilroy-Medium", sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   margin-top: 15px;
+  font-weight:400;
+  width: 21rem;
+}
+
+.pricing-section{
+  width:100%;
+
 }
 
 .price-plan-section {
+  width:100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   margin-top: 50px;
 }
 
 .price-header {
   width: 36rem;
   margin: 20px auto;
-  margin-top: 70px;
 }
 
 .price-header-text {
@@ -322,16 +343,17 @@ h5 {
 
 .price-plan {
   display: flex;
+  width: 80%;
+  margin-top: 50px auto;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
 }
 
 .basic-plan {
   border-left: 0.4px solid #005ae2;
   border-top: 0.4px solid #005ae2;
   border-bottom: 0.4px solid #005ae2;
-  box-shadow: 0px 4px 8px 0px #0000000D;
-
+  box-shadow: 0px 4px 8px 0px #0000000d;
   border-radius: 12px 0 0 12px;
   width: 23.6rem;
   height: 28rem;
@@ -341,10 +363,10 @@ h5 {
 .basic-plan h2 {
   margin-top: 30px;
   margin-left: 80px;
-  font-family: 'Gilroy-Medium', sans-serif;
-font-size: 1.5rem;
-line-height: 32px;
-font-weight: 500;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 500;
 }
 
 .basic-plan-heading {
@@ -352,18 +374,17 @@ font-weight: 500;
   margin-top: 15px;
 }
 
-.basic-plan-heading h3{
-font-family: 'Gilroy-Bold', sans-serif;
-font-size: 2.5rem;
-line-height: 48px;
-
+.basic-plan-heading h3 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.5rem;
+  line-height: 48px;
 }
 
-.basic-plan-heading p{
-  font-family: 'Gilroy-Medium', sans-serif;
-font-size: 1.25rem;
-line-height: 32px;
-margin-top:10px;
+.basic-plan-heading p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
+  margin-top: 10px;
 }
 
 .basic-plan-body {
@@ -374,12 +395,11 @@ margin-top:10px;
 .basic-plan-body p {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 0.8rem;
-  line-height: 24px;
+  line-height: 1rem;
   margin-top: 20px;
 }
 
-
-.blue-checked{
+.blue-checked {
   float: left;
   padding: 3px;
   margin-right: 10px;
@@ -392,6 +412,7 @@ margin-top:10px;
   width: 25.6rem;
   height: 39rem;
   border-radius: 12px;
+  margin-top: 100px;
 }
 
 .professional-plan h2 {
@@ -405,7 +426,7 @@ margin-top:10px;
 
 .professional-plan-heading {
   margin-left: 50px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .professional-plan-heading h3 {
@@ -445,48 +466,49 @@ margin-top:10px;
   height: 28rem;
   margin-top: 80px;
   border-radius: 0 12px 12px 0;
-  box-shadow: 0px 4px 8px 0px #0000000D;
-
+  box-shadow: 0px 4px 8px 0px #0000000d;
 }
 
-.teams-plan h2{
-  margin-top:26px;
-  margin-left:80px ;
+.teams-plan h2 {
+  margin-top: 26px;
+  margin-left: 80px;
   font-weight: 500;
 }
 
-.teams-plan-heading{
-  margin-left:80px;
-  margin-top:25px;
-}
-
-.teams-plan-heading h3{
-
-font-family: 'Gilroy-Bold', sans-serif;
-font-size: 2.5rem;
-line-height: 48px;
-}
-
-.teams-plan-heading p{
-  font-family: 'Gilroy-Medium', sans-serif;
-  font-size: 1.25rem;
-  line-height: 32px;
-}
-
-.teams-plan-body{
+.teams-plan-heading {
   margin-left: 80px;
-  margin-top:20px;
+  margin-top: 25px;
 }
 
-.teams-plan-body p{
-  margin-top:20px;
-  font-family: 'Gilroy-Medium', sans-serif;
-font-size: 0.875rem;
-line-height: 24px;
+.teams-plan-heading h3 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+
+.teams-plan-heading p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1rem;
+  margin-top: 5px;
+}
+
+.teams-plan-body {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.teams-plan-body p {
+  margin-top: 20px;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  
 }
 
 .cta2 {
-  width: 30%;
+  display: flex;
+  flex-direction: row;
   margin-top: 60px;
   margin-bottom: 80px;
 }
@@ -524,6 +546,7 @@ line-height: 24px;
 }
 
 .form-section {
+  width:100%;
   background-color: #1e3448;
   justify-content: center;
   padding: 5rem;
@@ -610,7 +633,7 @@ form p {
 }
 
 .accordion-container {
-  width: 49rem;
+  width: 50%;
   margin: 20px auto;
 }
 
@@ -669,13 +692,12 @@ form p {
 
 .last-section {
   background: #1e3448;
-  /* url(./asset/images/background-vector.svg),
-  url(./asset/images/background-vector1.svg); */
+  width:100%;
   padding: 2rem;
   background-repeat: no-repeat;
 }
 
-.last-section::before{
+.last-section::before {
   background-image: url(./asset/images/background-vector.svg);
 }
 
@@ -697,11 +719,10 @@ form p {
 
 /* styles for footer */
 footer {
-  
-  /* gap: 100px; */
+ width:100%;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   padding: 5rem;
   place-content: center;
@@ -713,7 +734,7 @@ footer {
 }
 
 .footer-logo-icon {
-   margin-right: 100px;
+  margin-right: 100px;
   margin-bottom: 50px;
 }
 
@@ -762,7 +783,7 @@ footer {
   color: #112232;
 }
 
-.footer-last-text{
+.footer-last-text {
   width: 30%;
   float: right;
   padding-bottom: 30px;
@@ -771,7 +792,7 @@ footer {
   font-weight: 500;
 }
 
-.footer-last-text p{
+.footer-last-text p {
   font-family: rem;
 }
 
@@ -793,7 +814,9 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .basic-plan, .professional-plan, .teams-plan {
+  .basic-plan,
+  .professional-plan,
+  .teams-plan {
     width: 45%;
   }
 }
